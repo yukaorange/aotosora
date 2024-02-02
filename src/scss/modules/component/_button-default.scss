@@ -1,0 +1,27 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.button-default {
+  display: grid;
+  place-items: center;
+  width: 8rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.1rem solid var(--black);
+  &::after {
+    content: "";
+    width: 1.6rem;
+    aspect-ratio: 1/1;
+    background-color: var(--red-1);
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  }
+}
+
+@media (max-width: 780px) {
+  .button-default {
+    width: 5rem;
+    &::after{
+      width: 1rem;
+    }
+  }
+}

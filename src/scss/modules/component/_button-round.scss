@@ -1,0 +1,27 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.button-round {
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  aspect-ratio: 1/1;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.button-round__icon {
+  width: 2.3rem;
+  img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 780px) {
+  .button-round {
+    width: 4.8rem;
+  }
+  .button-round__icon {
+    width: 1.8rem;
+  }
+}

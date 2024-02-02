@@ -1,0 +1,15 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.single-news {
+  margin-top: 0;
+}
+
+.single-news__body {
+  padding-inline: 5rem;
+}
+@media (max-width: 780px) {
+  .single-news__body {
+    padding-inline: 2rem;
+  }
+}

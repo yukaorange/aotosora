@@ -1,0 +1,29 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.develop {
+  padding: 200px 20px;
+}
+
+.spacer {
+  padding: 100px;
+}
+
+.bgc {
+  padding: 50px 0;
+  background-color: var(--bg-gray2);
+}
+.hidden{
+  height: 0;
+  visibility: hidden;
+}
+
+.develop-text{
+  color: red;
+}
+
+.develop-image{
+  width: 50rem;
+  aspect-ratio: 4/3;
+  background-image: url("/images/top/top-performance.webp");
+}

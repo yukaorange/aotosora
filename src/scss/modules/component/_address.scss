@@ -1,0 +1,40 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.address {
+}
+
+.address__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 4rem;
+  row-gap: 1.6rem;
+  justify-items: start;
+}
+
+.address__term {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
+
+.address__desc {
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .address__inner {
+    column-gap: 2rem;
+    row-gap: 0.8rem;
+    grid-template-columns: 15% 1fr;
+  }
+  .address__desc {
+    font-size: 1.3rem;
+  }
+
+  .address__term {
+    font-size: 1.3rem;
+  }
+}

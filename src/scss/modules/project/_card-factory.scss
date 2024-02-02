@@ -1,0 +1,119 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.cards-factory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 8rem;
+}
+.card-factory {
+  position: relative;
+  z-index: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .card-factory.js-fadein.animated:hover .card-factory__link{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.card-factory__figure {
+  width: 100%;
+  aspect-ratio: 683/455;
+}
+.card-factory__body {
+  display: grid;
+  row-gap: 1.6rem;
+  justify-items: center;
+  margin-top: 2.4rem;
+}
+.card-factory__link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.card-factory__sub {
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--black-2);
+  letter-spacing: 0.12em;
+}
+
+.card-factory__title h3:not(.card-factory__heading) {
+  line-height: 0;
+  img{
+    object-fit: contain;
+  }
+}
+.card-factory__heading {
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--black-2);
+  letter-spacing: 0.1em;
+}
+.card-factory .yamabiko {
+  max-width: 22.5rem;
+}
+.card-factory .nurserypuuapuu {
+  max-width: 21.8rem;
+}
+.card-factory .nurserypuuapuuetela {
+  max-width: 33.8rem;
+}
+.card-factory .morinosanpomiti {
+  max-width: 17.8rem;
+}
+.card-factory .tesnoki {
+  max-width: 14.8rem;
+}
+.card-factory .nurseryrope {
+  max-width: 27.3rem;
+}
+.card-factory .aotosora {
+  max-width: 28rem;
+}
+
+@media (max-width: 780px) {
+  .cards-factory {
+    row-gap: 3.2rem;
+  }
+  .card-factory .yamabiko {
+    max-width: 9.75rem;
+  }
+  .card-factory .nurserypuuapuu {
+    max-width: 9.65rem;
+  }
+  .card-factory .nurserypuuapuuetela {
+    max-width: 14.4rem;
+  }
+  .card-factory .morinosanpomiti {
+    max-width: 7.8rem;
+  }
+  .card-factory .tesnoki {
+    max-width: 6.5rem;
+  }
+  .card-factory .nurseryrope {
+    max-width: 11.5rem;
+  }
+  .card-factory .aotosora {
+    max-width: 11.1rem;
+  }
+
+  .card-factory__figure {
+    aspect-ratio: 180/120;
+  }
+
+  .card-factory__body {
+    margin-top: 1.6rem;
+    row-gap: 0.8rem;
+  }
+
+  .card-factory__sub {
+    font-size: 0.8rem;
+  }
+
+  .card-factory__heading {
+    font-size: 1.4rem;
+  }
+}

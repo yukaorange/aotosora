@@ -1,0 +1,12 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.top-concept {
+  margin-top: 25rem;
+}
+
+@media (max-width: 780px) {
+  .top-concept {
+    margin-top: 10.5rem;
+  }
+}

@@ -1,0 +1,94 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.content-connection {
+}
+
+.content-connection__thumbnail {
+  aspect-ratio: 1366/903;
+}
+.content-connection__inner {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.content-connection__lead {
+  margin-top: 10rem;
+  line-height: 0;
+}
+
+.content-connection__lead.content-connection__lead--aotosora {
+  width: 31.2rem;
+}
+
+.content-connection__lead.content-connection__lead--entrust {
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.content-connection__lead.content-connection__lead--temporarychildcare {
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  font-weight: 500;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto;
+  column-gap: 3.2rem;
+}
+
+.content-connection__body {
+  margin-top: 10rem;
+}
+.content-connection__text {
+  letter-spacing: 0.1em;
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+.content-connection .button-more {
+  // margin-top: 5rem;
+}
+
+.content-connection__buttons {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  row-gap: 5rem;
+  column-gap: 5rem;
+}
+
+@media (max-width: 780px) {
+  .content-connection__inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .content-connection__thumbnail {
+    aspect-ratio: 360/240;
+  }
+  .content-connection__lead {
+    margin-top: 5rem;
+    margin-inline: auto;
+  }
+
+  .content-connection__lead.content-connection__lead--aotosora {
+    width: 25.6rem;
+  }
+  .content-connection__lead.content-connection__lead--entrust {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .content-connection__body {
+    margin-top: 5rem;
+  }
+  .content-connection__text {
+    line-height: 2;
+    font-size: 1.3rem;
+  }
+  .content-connection .button-more {
+    margin-top: 4rem;
+  }
+}

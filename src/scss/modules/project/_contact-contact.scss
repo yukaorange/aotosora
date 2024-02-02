@@ -1,0 +1,48 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.contact-contact {
+  margin-top: 0;
+}
+
+.contact-contact__body {
+  padding-inline: 5rem;
+}
+
+.contact-contact .smf-form {
+  display: grid;
+  row-gap: 3.2rem;
+  overflow-x: hidden;
+}
+
+.contact-contact .smf-item {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+}
+
+.smf-item__col--label {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  column-gap: 1.6rem;
+}
+
+.contact-contact .smf-action {
+  margin-top: 10rem;
+}
+
+.contact-contact .smf-item__col--controls{
+  display: grid;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .contact-contact__body {
+    padding-inline: 2rem;
+  }
+  .contact-contact .smf-item {
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+}

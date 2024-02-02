@@ -1,0 +1,12 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.gardens-movie {
+  margin-top: 25rem;
+}
+
+@media (max-width: 780px) {
+  .gardens-movie {
+    margin-top: 15rem;
+  }
+}

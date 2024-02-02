@@ -1,0 +1,59 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.flow-flow {
+  padding-top:15rem ;
+  background-color: var(--lightgray-4);
+}
+.section.flow-flow{
+  margin-bottom: 0;
+  padding-bottom: 20rem;
+}
+
+.flow-flow .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.flow-flow__message {
+  margin-top: 10rem;
+  max-width: 80rem;
+  margin-inline: auto;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+}
+
+.flow-flow__thumbnail {
+  margin-top: 10rem;
+  aspect-ratio: 1366/903;
+}
+
+.flow-flow__body {
+  margin-top: 10rem;
+  display: grid;
+  justify-items: center;
+}
+
+.flow-flow .content-flow {
+  max-width: 103rem;
+}
+
+@media (max-width: 780px) {
+  .section.flow-flow{
+    padding-top: 5rem;
+    margin-bottom: 0;
+    padding-bottom: 15rem;
+  }
+  .flow-flow__thumbnail {
+    margin-top: 5rem;
+    aspect-ratio: 360/240;
+  }
+  .flow-flow__message {
+    margin-top: 5rem;
+    padding-inline: 2rem;
+    font-size: 1.3rem;
+  }
+  .flow-flow__body{
+    padding-inline: 2rem;
+  }
+}

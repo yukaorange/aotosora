@@ -1,0 +1,11 @@
+@use "../variables/variables";
+@use "../mixin/media";
+@use "../mixin/function";
+/* ========================================
+# コンテンツ幅
+======================================== */
+@mixin inner {
+  width: min(var(--inner), 1540px);
+  margin-right: auto;
+  margin-left: auto;
+}

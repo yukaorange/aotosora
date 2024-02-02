@@ -1,0 +1,37 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.js-slideShowMask {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+@for $i from 1 through 5 {
+  .js-slideShowMask .slide#{$i} {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    transition-timing-function: var(--easeInOutSine);
+    transition-duration: 4s;
+    transition-property: mask-position;
+    mask-image: url("/images/mask/mask-image.png");
+    mask-position: center 200%;
+    mask-size: 200% 200%;
+    mask-repeat: no-repeat;
+  }
+}
+
+@for $i from 1 through 5 {
+  .js-slideShowMask .slide#{$i}.active {
+    mask-position: center 0%;
+    z-index: 3;
+  }
+}
+
+@for $i from 1 through 5 {
+  .js-slideShowMask .slide#{$i}.before {
+    mask-position: center 0%;
+    z-index: 2;
+  }
+}

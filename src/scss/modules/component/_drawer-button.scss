@@ -1,0 +1,102 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.drawer-button {
+  display: grid;
+  row-gap: 0.8rem;
+  justify-items: center;
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+.drawer-button__bars {
+  display: grid;
+  row-gap: 0.4em;
+  width: 2.5rem;
+  height: 2.5rem;
+  aspect-ratio: auto;
+}
+
+.drawer-button__bar {
+  display: grid;
+  width: 100%;
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+.drawer-button__circle {
+  animation-name: moveX;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  @keyframes moveX {
+    0% {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.drawer-button__text {
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.drawer-button.active .drawer-button__bars {
+  align-items: center;
+}
+.drawer-button.active .drawer-button__bar {
+  grid-area: 1/1;
+}
+
+.drawer-button.active .drawer-button__bar:nth-child(1) {
+  transform: rotate(45deg);
+  .drawer-button__circle {
+    display: none;
+  }
+}
+.drawer-button.active .drawer-button__bar:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg);
+}
+.drawer-button.active .drawer-button__bar:nth-child(3) {
+  transform: rotate(-45deg);
+  .drawer-button__circle {
+    display: none;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .drawer-button:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 780px) {
+  .drawer-button__bars {
+    row-gap: 0.4rem;
+    height: auto;
+  }
+  .drawer-button__text {
+    display: none;
+  }
+}

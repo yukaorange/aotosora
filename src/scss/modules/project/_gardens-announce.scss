@@ -1,0 +1,14 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.gardens-announce {
+  margin-top: 15rem;
+  padding-inline: 5rem;
+}
+
+@media (max-width: 780px) {
+  .gardens-announce {
+    margin-top: 6.4rem;
+    padding-inline: 2rem;
+  }
+}

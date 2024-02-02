@@ -1,0 +1,19 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.news-archive {
+}
+
+.news-archive__body {
+  padding-inline: 5rem;
+}
+
+.news-archive__body .screen-reader-text {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .news-archive__body {
+    padding-inline: 2rem;
+  }
+}

@@ -1,0 +1,112 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.panel-concept {
+  display: block;
+  align-items: center;
+  padding-top: 10.8rem;
+  padding-bottom: 12.6rem;
+  background-color: var(--white);
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+.panel-concept__inner {
+  display: grid;
+  justify-items: center;
+}
+
+.panel-concept__lead {
+  font-size: 5.5rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.panel-concept__lead > span > span {
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+//with splitting.js
+.panel-concept__lead .char:nth-of-type(1) {
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.panel-concept__title {
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding-right: 3.2rem;
+  margin-top: 5rem;
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+.panel-concept__title ._serif {
+  letter-spacing: 0.5em;
+}
+
+.panel-concept__title > span > span {
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+.panel-concept__title .arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+  transform: translateY(-50%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .panel-concept:hover {
+    background-color: var(--green-1);
+    opacity: 1;
+  }
+  .panel-concept:hover .arrow {
+    transform: translateY(-50%) translateX(0.7rem);
+  }
+  .panel-concept:hover .panel-concept__lead > span > span,
+  .panel-concept:hover .panel-concept__lead .upper-case,
+  .panel-concept:hover .panel-concept__title ._serif > span > span {
+    color: var(--white);
+  }
+  .panel-concept:hover .panel-concept__title .arrow__path {
+    fill: var(--white);
+  }
+}
+
+@media (max-width: 780px) {
+  .panel-concept {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .panel-concept__inner {
+    justify-items: start;
+    padding-left: 2rem;
+  }
+
+  .panel-concept__lead {
+    font-size: 3.2rem;
+    letter-spacing: 0.06em;
+  }
+  //with splitting.js
+  .panel-concept__lead .char:nth-of-type(1) {
+    font-size: 4.2rem;
+    line-height: 1;
+    letter-spacing: 0.06em;
+  }
+  .panel-concept__title {
+    max-width: calc(25rem + 4rem);
+    padding-right: 2rem;
+    margin-top: 3.2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.5em;
+  }
+}

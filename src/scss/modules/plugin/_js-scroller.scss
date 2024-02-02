@@ -1,0 +1,36 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.js-scroller {
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.js-scroller__content {
+}
+
+@media (max-width: 780px) {
+  .js-scroller {
+    height: 100svh;
+    scrollbar-width: 0; //firefox
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 1rem;
+      background-color: #ffffff00;
+    }
+  }
+
+  // .js-scroller{
+  //   display: contents;
+  // }
+  // .js-scroller__content{
+  //   position: relative;
+  // }
+}

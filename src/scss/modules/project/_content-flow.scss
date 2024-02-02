@@ -1,0 +1,27 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.content-flow{
+
+}
+
+.content-flow__header{}
+
+.content-flow__heading{
+  font-size: 2.6rem;
+  color: var(--black);
+}
+
+.content-flow__body{
+  margin-top: 6.40rem;
+}
+
+@media ( max-width : 780px) {
+  .content-flow__heading{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .content-flow__body{
+    margin-top: 3.2rem;
+  }
+}

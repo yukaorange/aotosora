@@ -1,0 +1,31 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+.list-content {
+  display: grid;
+  row-gap: 4rem;
+}
+
+.item-content {
+  display: grid;
+  row-gap: 1.6rem;
+}
+
+.item-content__body {
+  display: grid;
+  row-gap: 0.8rem;
+  grid-template-columns: auto 1fr;
+  column-gap: 1.6rem;
+}
+.item-content__term{
+  min-width: 12rem;
+}
+
+@media ( max-width : 780px) {
+  .list-content{
+    row-gap: 1.6rem;
+  }
+  .item-content__body{
+    row-gap: 0.4rem;
+    column-gap: 0.4rem;
+  }
+}

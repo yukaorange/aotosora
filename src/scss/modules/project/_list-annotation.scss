@@ -1,0 +1,32 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.list-annotation {
+  display: grid;
+  row-gap: 3.2rem;
+}
+.item-annotation {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  column-gap: 1.6rem;
+  align-items: start;
+}
+.item-annotation__num {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+.item-annotation__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 780px) {
+  .item-annotation__num {
+    font-size: 1.3rem;
+  }
+  .item-annotation__text {
+    font-size: 1.3rem;
+  }
+}

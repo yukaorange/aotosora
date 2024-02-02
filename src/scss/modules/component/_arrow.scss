@@ -1,0 +1,12 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.arrow{
+  display: grid;
+  width: fit-content;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.arrow--red{}
+.arrow--black{}

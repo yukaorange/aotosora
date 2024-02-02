@@ -1,0 +1,25 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.recruit-summary {
+}
+
+.recruit-summary .header-level2{
+  display: grid;
+  justify-items: center;
+}
+
+.recruit-summary__body{
+  margin-top: 10rem;
+  padding-inline: 5rem;
+}
+
+@media ( max-width : 780px) {
+  .recruit-summary{
+    margin-top: 15rem;
+  }
+  .recruit-summary__body{
+    padding-inline: 2rem;
+    margin-top: 5rem;
+  }
+}

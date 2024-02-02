@@ -1,0 +1,37 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.top-factory {
+  margin-top: 17.5rem;
+}
+
+.top-factory__inner {
+}
+
+.top-factory .header-level2 {
+  padding-left: 5rem;
+}
+//with splitting.js
+.top-factory .header-level2 .char:nth-of-type(1) {
+  letter-spacing: 0;
+}
+//with splitting.js
+.top-factory .header-level2 .char:not(:nth-of-type(1)) {
+  // vertical-align: bottom;
+}
+
+.top-factory__body {
+  margin-top: 5rem;
+}
+
+@media (max-width: 780px) {
+  .top-factory {
+    margin-top: 5rem;
+  }
+  .top-factory .header-level2 {
+    padding-left: 2rem;
+  }
+  .top-factory__body {
+    margin-top: 3.2rem;
+  }
+}

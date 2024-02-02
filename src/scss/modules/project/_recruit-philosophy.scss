@@ -1,0 +1,12 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.recruit-philosophy {
+  margin-top: 15rem;
+}
+
+@media ( max-width : 780px) {
+  .recruit-philosophy{
+    margin-top: 6.4rem;
+  }
+}

@@ -1,0 +1,56 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.header {
+  // position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-right: 4rem;
+  padding-bottom: 1.5rem;
+  padding-left: 4rem;
+  background-color: rgba(255, 255, 255, 0.76);
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  line-height: 0;
+  width: 22rem;
+  aspect-ratio: 220/50;
+  img {
+    object-fit: contain;
+  }
+}
+
+.header__buttons {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2.4rem;
+  align-items: center;
+  justify-self: end;
+}
+
+@media (max-width: 780px) {
+  .header {
+    padding-top: 1.3rem;
+    padding-right: 2rem;
+    padding-bottom: 1.3rem;
+    padding-left: 2rem;
+  }
+  .header__logo {
+    width: 11.6rem;
+  }
+
+  .header__buttons .button-tel,
+  .header__buttons .button-contact {
+    display: none;
+  }
+}

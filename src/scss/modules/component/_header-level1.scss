@@ -1,0 +1,33 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.header-level1 {
+  display: grid;
+  justify-items: center;
+}
+
+.header-level1__heading {
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.header-level1__heading span:nth-child(1) {
+  font-size: 7.5rem;
+}
+
+.header-level1__heading span:not(:nth-child(1)) {
+  font-size: 6rem;
+}
+
+@media (max-width: 780px) {
+  .header-level1__heading {
+  }
+
+  .header-level1__heading span:nth-child(1) {
+    font-size: 4.2rem;
+  }
+
+  .header-level1__heading span:not(:nth-child(1)) {
+    font-size: 3.2rem;
+  }
+}

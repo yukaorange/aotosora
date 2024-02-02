@@ -1,0 +1,31 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.button-tel {
+  display: grid;
+  row-gap: 0.8rem;
+  justify-items: center;
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+.button-tel__icon {
+  display: block;
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+}
+
+.button-tel__text {
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--black-2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-tel:hover {
+    opacity: 0.5;
+  }
+}

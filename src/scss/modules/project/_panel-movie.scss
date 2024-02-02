@@ -1,0 +1,150 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.panel-movie {
+  display: block;
+  align-items: center;
+  padding-top: 6.4rem;
+  padding-bottom: 10rem;
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: var(--white);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+}
+
+.panel-movie.panel-movie--yamabiko {
+  background-image: url(/images/movie/movie-adayofnursery.webp);
+}
+.panel-movie.panel-movie--recruit {
+  background-image: url(/images/recruit/recruit-movie-bg.webp);
+}
+
+.panel-movie__inner {
+  display: grid;
+  justify-items: center;
+  row-gap: 5rem;
+}
+
+.panel-movie__header {
+  display: grid;
+  justify-items: center;
+  row-gap: 2.4rem;
+}
+
+.panel-movie__lead {
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.panel-movie__sub {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.panel-movie__lead > span > span,
+.panel-movie__sub > span > span,
+.panel-movie .button-default,
+.panel-movie .button-default::after {
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+//with splitting.js
+.panel-movie__lead .char:nth-of-type(1) {
+  font-size: 6rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.panel-movie__title {
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding-right: 3.2rem;
+  margin-top: 5rem;
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .panel-movie:hover {
+    opacity: 1;
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  .panel-movie:hover .panel-movie__lead > span > span,
+  .panel-movie:hover .panel-movie__sub > span > span {
+    color: var(--white);
+  }
+  .panel-movie:hover .button-default {
+    border-color: var(--white);
+    &::after {
+      background-color: var(--white);
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .panel-movie {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  .panel-movie__header {
+    row-gap: 1.6rem;
+  }
+
+  .panel-movie__inner {
+    row-gap: 2.4rem;
+  }
+
+  .panel-movie__lead {
+    font-size: 2.8rem;
+    letter-spacing: 0.06em;
+  }
+  //with splitting.js
+  .panel-movie__lead .char:nth-of-type(1) {
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: 0.06em;
+  }
+
+  .panel-movie__sub {
+    font-size: 1.3rem;
+  }
+
+  .panel-movie .panel-movie__lead > span > span,
+  .panel-movie .panel-movie__sub > span > span {
+    color: var(--white);
+  }
+  .panel-movie .button-default {
+    border-color: var(--white);
+    &::after {
+      background-color: var(--white);
+    }
+  }
+
+  .panel-movie.panel-movie--yamabiko {
+    background-image: url(/images/movie/movie-adayofnursery-sp.webp);
+  }
+}

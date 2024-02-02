@@ -1,0 +1,22 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.cards-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+}
+
+.card-gallery {
+  cursor: pointer;
+  aspect-ratio: 683/455;
+}
+
+@media (max-width: 780px) {
+  .cards-gallery{
+    row-gap: 3.2rem;
+  }
+  .card-gallery {
+    aspect-ratio: 180/120;
+  }
+}

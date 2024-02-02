@@ -1,0 +1,15 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.flow-announce {
+  margin-top: 15rem;
+  padding-bottom: 20rem;
+}
+
+@media (max-width: 780px) {
+  .flow-announce {
+    padding-inline: 2rem;
+    margin-top: 6.4rem;
+    padding-bottom: 10rem;
+  }
+}

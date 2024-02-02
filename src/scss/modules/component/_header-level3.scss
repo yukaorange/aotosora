@@ -1,0 +1,33 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.header-level3 {
+  display: grid;
+  justify-items: center;
+}
+
+.header-level3__heading {
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.header-level3.header-level3--jp .header-level3__heading {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+.header-level3__heading span {
+  font-size: 4.2rem;
+}
+
+@media (max-width: 780px) {
+  .header-level3__heading span {
+    font-size: 2.8rem;
+  }
+
+  .header-level3.header-level3--jp .header-level3__heading {
+    font-size: 2rem;
+  }
+}

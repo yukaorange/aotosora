@@ -1,0 +1,66 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.top-fv {
+  aspect-ratio: 1366/1024;
+  position: relative;
+  z-index: 0;
+}
+
+.top-fv__headline {
+  position: relative;
+  z-index: 1;
+  margin-left: 16rem;
+  padding-top: 14rem;
+  font-weight: 400;
+  font-size: 2.8rem;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.top-fv__headlineRow{
+  display: block;
+  color: var(--white);
+  line-height: 1;
+  text-shadow: 0px 4px 15px rgba(38, 38, 28, 0.9);
+}
+
+.top-fv__headline span{
+  color: var(--white);
+}
+
+.top-fv__headlineRow--row1 {
+  letter-spacing: 0.3em;
+}
+.top-fv__headlineRow--row2 {
+  padding-top: 2.2rem;
+  margin-right: 3.2rem;
+  letter-spacing: 0.47em;
+}
+
+.top-fv__slideshow {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+@media (max-width: 780px) {
+  .top-fv {
+    aspect-ratio: 360/270;
+    margin-top: var(--header-height);
+  }
+
+  .top-fv__headline {
+    padding-top: 3rem;
+    margin-left: 3.2rem;
+  }
+
+  .top-fv__headlineRow {
+    font-size: 1.3rem;
+  }
+
+  .top-fv__headlineRow--row2 {
+    padding-top: 0.8rem;
+    margin-right: 1.4rem;
+  }
+}

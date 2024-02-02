@@ -1,0 +1,24 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.profile-overview {
+  padding-inline: 5rem;
+}
+
+.profile-overview .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.profile-overview .list-summary {
+  margin-top: 10rem;
+}
+
+@media (max-width: 780px) {
+  .profile-overview {
+    padding-inline: 2rem;
+  }
+  .profile-overview .list-summary {
+    margin-top: 5rem;
+  }
+}

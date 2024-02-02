@@ -1,0 +1,37 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.gardens-map {
+  margin-top: 25rem;
+}
+.gardens-map .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.gardens-map__map {
+  padding-inline: 5rem;
+  margin-top: 10rem;
+  aspect-ratio: 1266/450;
+}
+
+.gardens-map__button {
+  margin-top: 10rem;
+  display: grid;
+  justify-items: center;
+}
+
+@media (max-width: 780px) {
+  .gardens-map {
+    margin-top: 15rem;
+  }
+  .gardens-map__map {
+    margin-top: 5rem;
+    padding-inline: 0;
+    aspect-ratio: 360/350;
+  }
+  .gardens-map__button {
+    margin-top: 5rem;
+    padding-inline: 2rem;
+  }
+}

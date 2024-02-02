@@ -1,0 +1,57 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.button-more {
+  box-shadow: 0rem 0.1rem 0.1rem 0.1rem #d9d9d980;
+  background-color: var(--white);
+  display: grid;
+  font-size: 1.8rem;
+  letter-spacing: 0.15em;
+  min-width: 35.6rem;
+  width: fit-content;
+  align-items: center;
+  grid-template-columns: repeat(2, auto);
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.15em;
+}
+
+.button-more.button-more--small {
+  min-width: 25rem;
+}
+
+.button-more .arrow {
+  justify-self: end;
+  position: relative;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-more:hover {
+    background-color: var(--red-1);
+    opacity: 1;
+  }
+  .button-more:hover span {
+    color: var(--white);
+  }
+  .button-more:hover .arrow {
+    transform: translateX(1rem);
+    path {
+      fill: var(--white);
+    }
+  }
+}
+
+@media ( max-width : 780px) {
+  .button-more{
+    min-width: auto;
+    width: 100%;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    font-size: 1.5rem;
+  }
+}

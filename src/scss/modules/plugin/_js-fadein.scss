@@ -1,0 +1,91 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+// .js-fadein {
+//   position: relative;
+//   z-index: 0;
+//   opacity: 0;
+//   transform: translate3d(0,1rem,0);
+//   animation-duration: 0.5s;
+//   animation-timing-function: ease-in;
+//   animation-delay: 0.2s;
+//   animation-fill-mode: forwards;
+//   transition-property: opacity transform;
+//   will-change: opacity, transform;
+// }
+
+// .arrow.js-fadein {
+//   transform: translateY(-50%);
+//   animation-delay: 1.25s;
+// }
+
+// .item-movie.js-fadein {
+//   animation-delay: 0s;
+// }
+
+// .js-fadein.active {
+//   animation-name: fadein;
+//   @keyframes fadein {
+//     0% {
+//       opacity: 0;
+//       transform: translate3d(0,1rem,0);
+//     }
+//     100% {
+//       opacity: 1;
+//       transform: translate3d(0,0,0);
+//     }
+//   }
+// }
+
+// .js-fadein.animated {
+// }
+
+// .js-fadein.active.arrow {
+//   animation-name: fadeInArrow;
+//   @keyframes fadeInArrow {
+//     0% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+// }
+
+.js-fadein {
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+  transform: translate3d(0, 1rem, 0);
+  transition:
+    opacity 0.5s ease-in 0.2s,
+    transform 0.5s ease-in 0.2s;
+  will-change: opacity, transform;
+}
+
+.content-philosophy__body.js-fadein {
+  transition: opacity 1s ease-in 1s;
+}
+
+.panel-movie__button.js-fadein {
+  transition: opacity 1s ease-in 1s ;
+}
+
+.arrow.js-fadein {
+  transform: translateY(-50%);
+  transition-delay: 1.25s; /* ここで遅延を設定 */
+}
+
+.item-movie.js-fadein {
+  transition-delay: 0s;
+}
+
+.js-fadein.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.js-fadein.active.arrow {
+  transform: translateY(-50%);
+  opacity: 1;
+}

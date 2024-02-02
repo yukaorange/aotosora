@@ -1,0 +1,124 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.common-loading {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-width: 0rem; //firefox
+  scrollbar-color: #444 #ccc; //firefox
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  // display: none;//activate when developing
+}
+
+.common-loading .dummy {
+  display: none;
+}
+
+.common-loading--page {
+  // display: none;
+}
+
+.common-loading.common-loading--page #log,
+.common-loading.common-loading--page #progress,
+body .common-loading #log,
+body .common-loading #progress {
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.firstAccess .common-loading #progress {
+  visibility: visible;
+  opacity: 1;
+}
+
+.common-loading__inner {
+  min-height: calc(100% + 1px);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.common-loading #log {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  grid-area: 1/1;
+}
+
+.common-loading #progress {
+  color: var(--black);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  grid-area: 1/1;
+}
+
+body.loaded .common-loading {
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 1.5s;
+  pointer-events: none;
+  transition-timing-function: ease-in;
+}
+
+.loading-count {
+  --width: 1.8rem;
+  --height: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.loading-count__digit {
+  width: var(--width);
+  height: var(--height);
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-count__percent {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 0.4rem;
+}
+
+.loading-count__loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-count__digit--hundred .loading-count__loader {
+  transform: translateY(calc(-100% * var(--progress)));
+  transition-duration: 0.8s;
+  transition-timing-function: var(--easeOutSine);
+}
+
+.loading-count__digit--ten .loading-count__loader {
+  transform: translateY(calc(-100% * var(--progress)));
+  transition-duration: 0.2s;
+}
+
+.loading-count__digit--one .loading-count__loader {
+  transform: translateY(calc(-100% * var(--progress)));
+  transition-duration: 0.2s;
+}
+
+.loading-count__num {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  text-align: center;
+}

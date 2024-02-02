@@ -1,0 +1,32 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.gardens-overview {
+  margin-top: 25rem;
+}
+.gardens-overview .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.gardens-overview {
+}
+
+.gardens-overview__body {
+  margin-top: 10rem;
+  padding-inline: 5rem;
+}
+
+@media (max-width: 780px) {
+  .gardens-overview {
+    margin-top: 15rem;
+  }
+  .gardens-overview {
+  }
+  .gardens-overview__body {
+    padding-inline: 2rem;
+    margin-top: 5rem;
+  }
+  .gardens-overview .list-summary {
+  }
+}

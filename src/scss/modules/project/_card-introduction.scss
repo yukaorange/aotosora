@@ -1,0 +1,105 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.cards-introduction {
+  display: grid;
+  row-gap: 10rem;
+}
+
+.card-introduction {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.card-introduction__figure {
+  padding-right: 4rem;
+}
+
+.card-introduction__inner {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.card-introduction__body {
+  margin-top: 4rem;
+}
+
+.card-introduction .button-more {
+  margin-top: 3.2rem;
+}
+
+.card-introduction .button-more + .button-more {
+  margin-top: 1.6rem;
+}
+
+.card-introduction .yamabiko {
+  max-width: 21rem;
+}
+.card-introduction .nurserypuuapuu {
+  max-width: 20rem;
+}
+.card-introduction .nurserypuuapuuetela {
+  max-width: 30.4rem;
+}
+.card-introduction .morinosanpomiti {
+  max-width: 16.7rem;
+}
+.card-introduction .tesnoki {
+  max-width: 14rem;
+}
+.card-introduction .nurseryrope {
+  max-width: 25.2rem;
+}
+
+@media (max-width: 780px) {
+  .cards-introduction {
+    row-gap: 5rem;
+  }
+
+  .card-introduction {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
+
+  .card-introduction__figure {
+    padding-right: 0;
+  }
+
+  .card-introduction__inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 4rem;
+  }
+
+  .card-introduction__body {
+    margin-top: 3.2rem;
+  }
+
+  .card-introduction .button-more {
+    margin-top: 2.4rem;
+  }
+
+  .card-introduction .button-more + .button-more {
+    margin-top: 0.8rem;
+  }
+
+  .card-introduction .yamabiko {
+    max-width: 15rem;
+  }
+  .card-introduction .nurserypuuapuu {
+    max-width: 15.7rem;
+  }
+  .card-introduction .nurserypuuapuuetela {
+    max-width: 24.5rem;
+  }
+  .card-introduction .morinosanpomiti {
+    max-width: 12.2rem;
+  }
+  .card-introduction .tesnoki {
+    max-width: 10.2rem;
+  }
+  .card-introduction .nurseryrope {
+    max-width: 20rem;
+  }
+}

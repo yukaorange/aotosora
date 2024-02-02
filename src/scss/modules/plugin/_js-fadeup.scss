@@ -1,0 +1,52 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+//with splitting.js
+// .js-fadeup .word {
+//   position: relative;
+//   z-index: 0;
+//   opacity: 0;
+//   transform: translate3d(0, 100%, 0) rotate(5deg);
+//   transform-origin: 0 0;
+//   animation-duration: 1s;
+//   animation-timing-function: ease-in-out;
+//   animation-delay: 0.2s;
+//   animation-fill-mode: forwards;
+//   will-change: opacity, transform;
+//   backface-visibility: hidden;
+// }
+
+// .drawer-nav.js-fadeup.active .word,
+// .fnav.js-fadeup.active .word {
+//   animation-name: fadeup;
+//   @keyframes fadeup {
+//     0% {
+//       opacity: 0;
+//       transform: translate3d(0, 100%, 0) rotate(5deg);
+//     }
+//     100% {
+//       opacity: 1;
+//       transform: translate3d(0, 0, 0) rotate(0deg);
+//     }
+//   }
+// }
+
+//@drawer-menu & @footer-menu
+.js-fadeup .word {
+  position: relative;
+  z-index: 0;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0) rotate(5deg);
+  transform-origin: 0 0;
+  transition: 
+    opacity 1s ease-in-out 0.2s, 
+    transform 1s ease-in-out 0.2s;
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+}
+
+.drawer-nav.js-fadeup.active .word,
+.fnav.js-fadeup.active .word {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) rotate(0deg);
+}

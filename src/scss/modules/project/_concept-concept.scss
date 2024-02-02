@@ -1,0 +1,24 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.concept-concept {
+  margin-top: 15rem;
+}
+
+.concept-concept .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.concept-concept .cards-concept {
+  margin-top: 10rem;
+}
+
+@media (max-width: 780px) {
+  .concept-concept .cards-concept {
+    margin-top: 5rem;
+  }
+  .concept-concept {
+    margin-top: 6.4rem;
+  }
+}

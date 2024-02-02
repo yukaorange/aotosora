@@ -1,0 +1,25 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.gallery-closet {
+  margin-top: 15rem;
+}
+
+.gallery-closet .header-level3 {
+  display: grid;
+  justify-items: center;
+}
+
+.gallery-closet .cards-gallery {
+  margin-top: 10rem;
+}
+
+@media (max-width: 780px) {
+  .gallery-closet {
+    margin-top: 6.4rem;
+  }
+  
+  .gallery-closet .cards-gallery {
+    margin-top: 5rem;
+  }
+}

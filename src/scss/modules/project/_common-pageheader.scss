@@ -1,0 +1,33 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.common-pageheader {
+  padding-top: 17.8rem;
+  padding-bottom: 15rem;
+  display: grid;
+  justify-items: center;
+}
+
+.common-pageheader__title span {
+  line-height: 1;
+  font-size: 6rem;
+  letter-spacing: 0.06em;
+}
+
+.common-pageheader__title span:nth-child(1) {
+  font-size: 7.5rem;
+}
+
+@media (max-width: 780px) {
+  .common-pageheader {
+    padding-top: 10rem;
+    padding-bottom: 5.4rem;
+  }
+  .common-pageheader__title span {
+    font-size: 3.2rem;
+  }
+
+  .common-pageheader__title span:nth-child(1) {
+    font-size: 4.2rem;
+  }
+}

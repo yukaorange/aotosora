@@ -1,0 +1,7 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.drawer-close {
+  display: grid;
+  font-size: 2rem;
+}

@@ -1,0 +1,59 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+// with splitting.js
+.js-reveal {
+  will-change: opacity, transform;
+}
+
+.js-reveal .char {
+  position: relative;
+  opacity: 0.1;
+  transform: translate3d(0.75rem, 0, 0);
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-delay: calc(var(--char-index) * 0.05s + 0.05s);
+  animation-fill-mode: forwards;
+  will-change: opacity, transform;
+}
+
+.js-reveal.active .char {
+  animation-name: revealing;
+  @keyframes revealing {
+    0% {
+      opacity: 0.1;
+      transform: translate3d(0.5rem, 0, 0);
+    }
+    75% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+.content-profile.js-reveal .char,
+.content-announce.js-reveal .char,
+.content-philosophy.js-reveal .char,
+.flow-flow__message.js-reveal .char {
+  animation-duration: 0.8s;
+  animation-timing-function: var(--easeInQuad);
+  animation-delay: calc(var(--char-index) * 0.01s + 0.1s);
+}
+
+// .js-reveal .char {
+//   position: relative;
+//   opacity: 0;
+//   transform: translate3d(1rem, 0, 0);
+//   transition:
+//     opacity 1.2s ease-in calc(var(--char-index) * 0.05s + 0.05s),
+//     transform 1.2s ease-in calc(var(--char-index) * 0.05s + 0.05s);
+//   will-change: opacity, transform;
+// }
+
+// .js-reveal.active .char {
+//   opacity: 1;
+//   transform: translate3d(0, 0, 0);
+// }

@@ -1,0 +1,81 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+.swiper-intro {
+  display: none;
+}
+
+.swiper-intro__slide {
+  position: relative;
+}
+
+.swiper-intro__controler {
+  display: none;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.swiper-intro__button-next,
+.swiper-intro__button-prev {
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 0.8rem);
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--white);
+  display: grid;
+  &::after {
+    content: "";
+    width: 1rem;
+    position: relative;
+    aspect-ratio: 1/1;
+    border-bottom: 0.1rem solid var(--black);
+    border-right: 0.1rem solid var(--black);
+    top: 50%;
+    left: 50%;
+  }
+}
+.swiper-intro__button-prev {
+  transform: translateY(-50%);
+  left: 0;
+  &::after {
+    transform: translate(calc(-50% + 0.2rem), -50%) rotate(calc(180deg - 45deg));
+  }
+}
+.swiper-intro__button-next {
+  transform: translateY(-50%);
+  right: 0;
+  &::after {
+    transform: translate(calc(-50% - 0.2rem), -50%) rotate(calc(0deg - 45deg));
+  }
+}
+
+.swiper-intro__nav {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  column-gap: 1.2rem;
+}
+
+.swiper-intro__nav .swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.swiper-intro__nav .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--green-1);
+}
+
+@media (max-width: 780px) {
+  .swiper-intro {
+    display: block;
+  }
+  .swiper-intro__slide {
+    aspect-ratio: 320/213;
+  }
+  .swiper-intro__controler{
+    display: block;
+  }
+}

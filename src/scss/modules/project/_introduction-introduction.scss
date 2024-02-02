@@ -1,0 +1,24 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.introduction-introduction {
+  margin-top: 15rem;
+}
+
+.introduction-introduction .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.introduction-introduction .cards-introduction {
+  margin-top: 10rem;
+}
+
+@media (max-width: 780px) {
+  .introduction-introduction {
+    margin-top: 6.4rem;
+  }
+  .introduction-introduction .cards-introduction {
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,58 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.drawer-nav {
+  display: block;
+  position: fixed; //モバイル以下でドロワーメニューに変形
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  opacity: 0;
+  transform: translate(0%, -100%);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  &.active {
+    animation: drawer forwards 0.8s ease;
+    @keyframes drawer {
+      0% {
+        transform: translate(0%, 0%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+      }
+    }
+  }
+}
+.drawer-nav__inner {
+  min-height: calc(100% + 1px); //stopping overscroll
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+  padding-left: 13.3rem;
+  padding-right: 13.3rem;
+}
+
+.drawer-nav .drawer-close {
+  margin-left: auto;
+  margin-top: 5rem;
+}
+
+@media (max-width: 780px) {
+  .drawer-nav{
+    height: 100svh;
+  }
+  .drawer-nav__inner {
+    padding-top: 9.2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .drawer-nav .drawer-close {
+    font-size: 1.5rem;
+    padding-right: 2rem;
+  }
+}

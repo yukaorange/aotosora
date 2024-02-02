@@ -1,0 +1,59 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.content-announce {
+  max-width: 78rem;
+  display: grid;
+  justify-items: center;
+  margin-inline: auto;
+}
+
+.content-announce__header {
+  display: grid;
+  justify-items: center;
+}
+
+.content-announce__heading {
+  display: grid;
+  row-gap: 1.6rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  justify-items: center;
+}
+
+.content-announce__heading-row2.content-announce__heading-row2--yamabiko {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1.3rem;
+}
+
+.content-announce__body {
+  margin-top: 10rem;
+}
+
+.content-announce__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  line-height: 2.5;
+}
+
+.content-announce__text span.word {
+  display: inline;
+}
+
+@media (max-width: 780px) {
+  .content-announce__heading {
+    font-size: 2.2rem;
+    row-gap: 0;
+    text-align: center;
+    letter-spacing: 0.18em;
+  }
+  .content-announce__body {
+    margin-top: 5rem;
+  }
+  .content-announce__text {
+    font-size: 1.3rem;
+  }
+}

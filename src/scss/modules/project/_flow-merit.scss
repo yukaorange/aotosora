@@ -1,0 +1,57 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.flow-merit {
+  margin-top: 0rem;
+  padding-top: 15rem;
+  background-color: var(--lightgray-4);
+  padding-bottom: 20rem;
+}
+
+.flow-merit .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.flow-merit__thumbnail {
+  margin-top: 10rem;
+  aspect-ratio: 1366/903;
+}
+
+.flow-merit__body {
+  margin-top: 10rem;
+  display: grid;
+  justify-items: center;
+}
+
+.flow-merit .content-flow {
+  max-width: 103rem;
+}
+
+.flow-merit .content-flow + .content-flow {
+  margin-top: 10rem;
+}
+
+@media (max-width: 780px) {
+  .flow-merit {
+    padding-top: 6.4rem;
+    padding-bottom: 10rem;
+  }
+
+  .flow-merit__thumbnail{
+    margin-top: 5rem;
+    aspect-ratio: 360/240;
+  }
+
+  .flow-merit__body {
+    margin-top: 4rem;
+    padding-inline: 2rem;
+  }
+  .flow-merit .content-flow + .content-flow {
+    margin-top: 5rem;
+  }
+
+  .flow-merit__thumbnail {
+    aspect-ratio: 360/240;
+  }
+}

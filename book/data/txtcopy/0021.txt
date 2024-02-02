@@ -1,0 +1,1 @@
+[{"id":1,"width":"40","height":"40","x":"334","y":"197","text":"2","option":0},{"id":2,"width":"110","height":"20","x":"261","y":"244","text":"\u904b\u55b6\u65bd\u8a2d\u306e\u7d39\u4ecb","option":0}]

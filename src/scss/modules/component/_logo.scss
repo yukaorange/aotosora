@@ -1,0 +1,13 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.logo {
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover {
+    opacity: 0.5;
+  }
+}

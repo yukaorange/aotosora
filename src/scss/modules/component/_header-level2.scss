@@ -1,0 +1,48 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.header-level2 {
+}
+
+.header-level2__heading {
+  font-size: 7rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.header-level2.header-level2--jp {
+}
+
+.header-level2.header-level2--jp .header-level2__heading {
+  letter-spacing: 0.1em;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+//with splitting.js
+.header-level2:not(.header-level2--jp) .header-level2__heading .char:nth-of-type(1) {
+  font-size: 8.5rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 780px) {
+  .header-level2 {
+  }
+  .header-level2__heading {
+    font-size: 3.2rem;
+    letter-spacing: 0.06em;
+  }
+  .header-level2.header-level2--jp .header-level2__heading {
+    letter-spacing: 0.1em;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  //with splitting.js
+  .header-level2:not(.header-level2--jp) .header-level2__heading .char:nth-of-type(1) {
+    font-size: 4.2rem;
+    letter-spacing: 0.06em;
+  }
+}
