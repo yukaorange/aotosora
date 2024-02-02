@@ -1,0 +1,10 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.aotosora-links {
+}
+@media screen and (max-width: 780px) {
+  .aotosora-links {
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,35 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.diseases-diseases {
+  margin-top: 15rem;
+}
+
+.diseases-diseases .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.diseases-diseases__body {
+  margin-top: 10rem;
+  padding-inline: calc(var(--col) * 3 + 5rem);
+  display: grid;
+  row-gap: 10rem;
+}
+
+@media (max-width: 780px) {
+  .diseases-diseases {
+    margin-top: 6.4rem;
+  }
+
+  .diseases-diseases .header-level2 {
+    display: grid;
+    justify-items: center;
+  }
+
+  .diseases-diseases__body {
+    margin-top: 5rem;
+    padding-inline: calc(var(--col) * 0 + 2rem);
+    row-gap: 5rem;
+  }
+}

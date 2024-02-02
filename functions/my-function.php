@@ -5,10 +5,10 @@ function my_page_title()
   global $post;
   $page_slug = $post->post_name;
   switch ($page_slug) {
-    case "introduction":
-      return "Introduction";
-    case "gallery":
-      return "Gallery";
+    case "about":
+      return "About";
+    case "diseases":
+      return "Diseases";
     case "profile";
       return "Profile";
     case "connection";

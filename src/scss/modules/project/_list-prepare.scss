@@ -1,0 +1,41 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.list-prepare {
+}
+.list-prepare__lead {
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+.list-prepare__list {
+  margin-top: 5rem;
+  padding-inline: calc(var(--col) * 1);
+  display: grid;
+  grid-template-columns: repeat(4, 22.8rem);
+  // column-gap: calc(var(--col) * 1 / 2);
+  column-gap: 1.57rem;
+  row-gap: 2.4rem;
+}
+.list-prepare__item {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .list-prepare {
+  }
+  .list-prepare__lead {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .list-prepare__list {
+    margin-top: 3.2rem;
+    padding-inline: 0;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0.8rem;
+  }
+  .list-prepare__item {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+}

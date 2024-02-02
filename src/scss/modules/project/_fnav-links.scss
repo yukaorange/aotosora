@@ -12,13 +12,18 @@
   font-size: 1.3rem;
 }
 
-.fnav-link a{
+.fnav-link a {
+  font-size: 1.3rem;
   display: block;
   overflow: hidden;
 }
 
-.fnav-link.fnav-link--top{
+.fnav-link.fnav-link--top {
   overflow: hidden;
+}
+
+.fnav-links + .fnav-item__lead {
+  margin-top: 4rem;
 }
 
 @media (max-width: 780px) {
@@ -61,5 +66,20 @@
   }
   .fnav-link:last-child {
     border-bottom: none;
+  }
+
+  .fnav-links + .fnav-item__lead {
+    border-top: 0.1rem solid var(--gray-2);
+    margin-top: 0rem;
+  }
+
+  .fnav-links.fnav-links--borderTopSp {
+    border-top: 0.1rem solid var(--gray-2);
+  }
+
+  .fnav-item__lead {
+    height: 100%;
+    display: grid;
+    align-items: center;
   }
 }

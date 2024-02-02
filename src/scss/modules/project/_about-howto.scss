@@ -1,0 +1,30 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.about-howto {
+}
+
+.about-howto .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.about-howto__body {
+  margin-top: 7.8rem;
+  padding-inline: calc(var(--col) * 3 + 5rem);
+}
+
+@media (max-width: 780px) {
+  .about-howto {
+  }
+
+  .about-howto .header-level2 {
+    display: grid;
+    justify-items: center;
+  }
+
+  .about-howto__body {
+    margin-top: 6.4rem;
+    padding-inline: calc(var(--col) * 0 + 2rem);
+  }
+}

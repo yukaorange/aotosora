@@ -6,18 +6,20 @@
 }
 
 .drawer-nav-link.drawer-nav-link--top {
-  font-size: 2.6rem;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.06em;
   border-bottom: none;
+  a {
+    font-size: 2.6rem;
+  }
 }
 
 .drawer-nav-link {
   position: relative;
   z-index: 0;
   display: block;
-  
+
   padding-left: 5rem;
   font-size: 1.3rem;
   font-size: 2rem;
@@ -43,10 +45,28 @@
   }
 }
 .drawer-nav-link a {
+  font-size: 2rem;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   display: block;
   overflow: hidden;
+}
+
+.drawer-nav__icon {
+  display: grid;
+  width: 21.1rem;
+}
+
+.drawer-nav__icon.drawer-nav__icon--aotosora {
+  width: 11.2rem;
+}
+
+.drawer-nav__icon + .drawer-nav-list {
+  margin-top: 5rem;
+}
+
+.drawer-nav__col + .drawer-nav__col {
+  margin-top: 15rem;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -93,5 +113,20 @@
     font-size: 1.1rem;
     line-height: 1.5;
     letter-spacing: 0.1em;
+  }
+
+  .drawer-nav__icon {
+    width: 11.6rem;
+    margin-left: 2rem;
+  }
+
+  .drawer-nav__icon.drawer-nav__icon--aotosora {
+    width: 6.2rem;
+  }
+  .drawer-nav__icon + .drawer-nav-list {
+    margin-top: 3.2rem;
+  }
+  .drawer-nav__col + .drawer-nav__col {
+    margin-top: 10rem;
   }
 }

@@ -1,9 +1,24 @@
 <div class="fnav js-fadeup">
   <ul class="fnav-list">
-    <li class="fnav-item fnav-item--top">
-      <div class="fnav-link fnav-link--top _en js-fadeup" data-fadeup>
-        <a href="<?php echo esc_url(home_url()); ?>">Top</a>
-      </div>
+    <li class="fnav-item fnav-item--2row">
+      <div class="fnav-item__lead _en js-fadeup" data-fadeup>Top</div>
+      <ul class="fnav-links">
+        <li class="fnav-link">
+          <a class="js-fadeup" href="<?php echo esc_url(home_url("")); ?>" data-fadeup>青とそら</a>
+        </li>
+      </ul>
+      <div class="fnav-item__lead _en js-fadeup" data-fadeup>About</div>
+      <ul class="fnav-links fnav-links--borderTopSp">
+        <li class="fnav-link">
+          <a class="js-fadeup" href="<?php echo esc_url(home_url("about")); ?>" data-fadeup>利用要項</a>
+        </li>
+      </ul>
+      <div class="fnav-item__lead _en js-fadeup" data-fadeup>Diseases</div>
+      <ul class="fnav-links fnav-links--borderTopSp">
+        <li class="fnav-link">
+          <a class="js-fadeup" href="<?php echo esc_url(home_url("diseases")); ?>" data-fadeup>対象疾患</a>
+        </li>
+      </ul>
     </li>
     <li class="fnav-item fnav-item--2row">
       <div class="fnav-item__lead _en js-fadeup" data-fadeup>Introduction</div>

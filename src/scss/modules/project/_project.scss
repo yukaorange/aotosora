@@ -6,16 +6,20 @@
 @forward "_content-connection";
 @forward "_content-profile";
 @forward "_content-announce";
+@forward "_content-about";
 @forward "_content-philosophy";
 @forward "_content-flow";
+@forward "_content-step";
 
 @forward "_card-factory";
 @forward "_card-introduction";
 @forward "_card-gallery";
 @forward "_card-concept";
+@forward "_card-links";
 
 @forward "_panel-concept";
 @forward "_panel-movie";
+@forward "_panel-reservation";
 @forward "_panel-images";
 
 @forward "_list-movie";
@@ -23,6 +27,8 @@
 @forward "_list-content";
 @forward "_list-flow";
 @forward "_list-annotation";
+@forward "_list-prepare";
+@forward "_list-diseases";
 
 @forward "_footer-contact";
 
@@ -44,6 +50,19 @@
 @forward "_top-factory";
 @forward "_top-concept";
 @forward "_top-movie";
+
+@forward "_aotosora-about";
+@forward "_aotosora-links";
+@forward "_aotosora-reservation";
+
+@forward "_about-usage";
+@forward "_about-map";
+@forward "_about-howto";
+@forward "_about-download";
+@forward "_about-prepare";
+@forward "_about-about";
+
+@forward "_diseases-diseases";
 
 @forward "_introduction-introduction";
 

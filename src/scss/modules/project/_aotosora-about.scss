@@ -1,0 +1,12 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.aotosora-about {
+  margin-top: 15rem;
+}
+@media screen and (max-width: 780px) {
+  .aotosora-about {
+    margin-top: 5rem;
+    padding-inline: 2rem;
+  }
+}

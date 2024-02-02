@@ -1,0 +1,13 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.about-about {
+  margin-top: 15rem;
+  padding-inline: 5rem;
+}
+@media screen and (max-width: 780px) {
+  .about-about {
+    margin-top: 6.4rem;
+    padding-inline: 2rem;
+  }
+}

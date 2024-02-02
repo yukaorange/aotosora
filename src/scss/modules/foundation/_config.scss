@@ -5,8 +5,10 @@
   --vw: 100vw;
   --inner: calc(100% - 0rem);
   --header-height: 8rem; //this value will be changed by js
+  --col: calc((100vw - 10rem) / 32);
   @media (max-width: 780px) {
     --inner: calc(100% - 0rem);
+    --col: calc((100vw - 4rem) / 14);
   }
   //color
   --white: #ffffff;

@@ -1,0 +1,37 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.about-map {
+  margin-top: 10rem;
+}
+.about-map .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.about-map__map {
+  padding-inline: 5rem;
+  margin-top: 10rem;
+  aspect-ratio: 1266/450;
+}
+
+.about-map__button {
+  margin-top: 10rem;
+  display: grid;
+  justify-items: center;
+}
+
+@media (max-width: 780px) {
+  .about-map {
+    margin-top: 15rem;
+  }
+  .about-map__map {
+    margin-top: 5rem;
+    padding-inline: 0;
+    aspect-ratio: 360/350;
+  }
+  .about-map__button {
+    margin-top: 5rem;
+    padding-inline: 2rem;
+  }
+}

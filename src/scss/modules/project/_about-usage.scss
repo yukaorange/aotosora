@@ -1,0 +1,24 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.about-usage {
+  padding-inline: 5rem;
+}
+
+.about-usage .header-level2 {
+  display: grid;
+  justify-items: center;
+}
+
+.about-usage .list-summary {
+  margin-top: 10rem;
+}
+
+@media (max-width: 780px) {
+  .about-usage {
+    padding-inline: 2rem;
+  }
+  .about-usage .list-summary {
+    margin-top: 5rem;
+  }
+}

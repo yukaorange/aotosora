@@ -1,0 +1,12 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.aotosora-reservation {
+  margin-top: 15rem;
+}
+@media screen and (max-width: 780px) {
+  .section.aotosora-reservation {
+    margin-top: 6.4rem;
+    margin-bottom: 15rem;
+  }
+}
