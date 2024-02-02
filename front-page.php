@@ -3,7 +3,7 @@
   <div class="top-fv">
     <div class="top-fv__headline js-topAnim" data-splitting>
       <span class="top-fv__headlineRow top-fv__headlineRow--row1 _serif js-topAnim__headline">人・物・自然</span>
-      <span class="top-fv__headlineRow top-fv__headlineRow--row2 _serif js-topAnim__headline"></span>
+      <span class="top-fv__headlineRow top-fv__headlineRow--row2 _serif js-topAnim__headline">保育は環境です。</span>
     </div>
     <div class="top-fv__slideshow js-slideShowMask">
       <?php
