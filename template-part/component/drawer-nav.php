@@ -9,7 +9,7 @@
           <div class="drawer-nav-item__lead _en js-fadeup" data-fadeup>Top</div>
           <ul class="drawer-nav-links">
             <li class="drawer-nav-link js-fadeup" data-fadeup>
-              <a href="<?php echo esc_url(home_url("introduction")); ?>">青とそら</a>
+              <a href="<?php echo esc_url(home_url("")); ?>">青とそら</a>
             </li>
           </ul>
         </li>

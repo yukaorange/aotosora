@@ -2,6 +2,7 @@
 @use "../mixin/mixin";
 
 .about-download {
+  margin-top: 15rem;
   padding-inline: calc(var(--col) * 3 + 5rem);
 }
 .about-download__header {

@@ -11,7 +11,7 @@
   background-color: var(--white);
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  scrollbar-width: 0rem; //firefox
+  scrollbar-width: none; //firefox
   scrollbar-color: #444 #ccc; //firefox
   &::-webkit-scrollbar {
     width: 0;

@@ -37,7 +37,7 @@ get_header(); ?>
           </h2>
         </div>
         <div class="content-announce__body">
-          <p class="content-announce__text">
+          <p class="content-announce__text _serif">
             ​​「子どもが急に熱をだしてしまった......でも仕事は休めない」「熱はさがったけど.....保育園に預けるのは少し心配。」そんな時一時的にお預かりするのが、病児保育室「青とそら」です。<br>
             青とそらでは、病気で保育園や学校に行けない、急な用事で熱のある子どもを一緒に連れて行けない等、病気のお子様が快適な環境とケアの中で安心して1日過ごせるように、専任保育士、看護師のもと保育・看護を行っています。
           </p>
@@ -119,11 +119,11 @@ get_header(); ?>
             "step" => [
               [
                 "step_num" => "01",
-                "step_content" => "<span>あずかるこちゃんにアクセスしてアカウントを作成する</span><a href='https://azkl.jp/' class='content-step__text--small'>https://azkl.jp/</a>"
+                "step_content" => "<span class='content-step__text--spMedium'>あずかるこちゃんにアクセスしてアカウントを作成する</span><a href='https://azkl.jp/' class='content-step__text--small'>https://azkl.jp/</a>"
               ],
               [
                 "step_num" => "02",
-                "step_content" => "病児保育室「青とそら」に利用登録"
+                "step_content" => "<span class='content-step__text--spMedium'>病児保育室「青とそら」に利用登録</span>"
               ],
             ]
           ],
@@ -133,16 +133,16 @@ get_header(); ?>
             "step" => [
               [
                 "step_num" => "01",
-                "step_content" => "<span>インターネットであずかるこちゃんから「青とそら」を予約申込</span><span class='content-step__text--small'>※利用の前日10時から当日15時まで予約可能。但し、当日9時以降に予約の場合は給食の提供ができません。
+                "step_content" => "<span class='content-step__text--spMedium'>インターネットであずかるこちゃんから「青とそら」を予約申込</span><span class='content-step__text--small'>※利用の前日10時から当日15時まで予約可能。但し、当日9時以降に予約の場合は給食の提供ができません。
                 </span>"
               ],
               [
                 "step_num" => "02",
-                "step_content" => "<span>病院受診をし『病児保育利用申請書』を取得</span>"
+                "step_content" => "<span class='content-step__text--spMedium'>病院受診をし『病児保育利用申請書』を取得</span>"
               ],
               [
                 "step_num" => "03",
-                "step_content" => "<span>「青とそら」に入室</span>"
+                "step_content" => "<span class='content-step__text--spMedium'>「青とそら」に入室</span>"
               ],
             ]
           ],
@@ -159,9 +159,9 @@ get_header(); ?>
                   <?php echo $num; ?>
                 </span>
               </div>
-              <div class="content-step__lead _serif">
+              <h3 class="content-step__lead _serif">
                 <?php echo $lead; ?>
-              </div>
+              </h3>
             </div>
             <div class="content-step__body">
               <?php

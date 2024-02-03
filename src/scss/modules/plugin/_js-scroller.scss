@@ -9,6 +9,8 @@
   left: 0;
   width: 100%;
   overflow-y: scroll;
+  scrollbar-width: thin; //firefox
+  scrollbar-color: #444 #ccc; //firefox
 }
 
 .js-scroller__content {

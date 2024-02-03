@@ -13,6 +13,8 @@
   opacity: 0;
   transform: translate(0%, -100%);
   overflow-y: auto;
+  scrollbar-width: thin; //firefox
+  scrollbar-color: #444 #ccc; //firefox
   overscroll-behavior-y: contain;
   &.active {
     animation: drawer forwards 0.8s ease;
@@ -42,7 +44,7 @@
 }
 
 @media (max-width: 780px) {
-  .drawer-nav{
+  .drawer-nav {
     height: 100svh;
   }
   .drawer-nav__inner {
