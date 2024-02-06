@@ -50,13 +50,13 @@
       <div class="fnav-item__lead _en js-fadeup" data-fadeup>Connection</div>
       <ul class="fnav-links">
         <li class="fnav-link">
-          <a class="js-fadeup" data-fadeup href="<?php echo esc_url(home_url("connection#aotosora")); ?>">病児保育室 青とそら</a>
+          <a class="js-fadeup" data-fadeup href="<?php echo esc_url(home_url("connection#aotosora")); ?>">病児保育室 青とそら(別府市)</a>
         </li>
         <li class="fnav-link">
-          <a class="js-fadeup" data-fadeup href="<?php echo esc_url(home_url("connection#temporarychildcare")); ?>">一時預り事業</a>
+          <a class="js-fadeup" data-fadeup href="<?php echo esc_url(home_url("connection#temporarychildcare")); ?>">一時預り事業（大分市・別府市）</a>
         </li>
         <li class="fnav-link">
-          <a class="js-fadeup" data-fadeup href="<?php echo esc_url(home_url("connection#entrust")); ?>">委託病院内保育事業</a>
+          <a class="js-fadeup" data-fadeup href="<?php echo esc_url(home_url("connection#entrust")); ?>">委託病院内保育事業（大分県内）</a>
         </li>
       </ul>
     </li>

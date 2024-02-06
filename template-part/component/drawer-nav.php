@@ -73,13 +73,13 @@
           <div class="drawer-nav-item__lead _en js-fadeup" data-fadeup>Connection</div>
           <ul class="drawer-nav-links">
             <li class="drawer-nav-link js-fadeup" data-fadeup>
-              <a href="<?php echo esc_url(home_url("connection#aotosora")); ?>">病児保育室 青とそら</a>
+              <a href="<?php echo esc_url(home_url("connection#aotosora")); ?>">病児保育室 青とそら(別府市)</a>
             </li>
             <li class="drawer-nav-link js-fadeup" data-fadeup>
-              <a href="<?php echo esc_url(home_url("connection#temporarychildcare")); ?>">一時預り事業</a>
+              <a href="<?php echo esc_url(home_url("connection#temporarychildcare")); ?>">一時預り事業（大分市・別府市）</a>
             </li>
             <li class="drawer-nav-link js-fadeup" data-fadeup>
-              <a href="<?php echo esc_url(home_url("connection#entrust")); ?>">委託病院内保育事業</a>
+              <a href="<?php echo esc_url(home_url("connection#entrust")); ?>">委託病院内保育事業（大分県内）</a>
             </li>
           </ul>
         </li>
