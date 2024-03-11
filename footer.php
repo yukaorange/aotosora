@@ -27,7 +27,7 @@
     get_template_part("template-part/component/fnav");
     ?>
     <a href="#" class="privacy-policy">プライバシーポリシー</a>
-    <div class="copyright _en">©2023 tomorrow company</div>
+    <div class="copyright _en">©2024 tomorrow company</div>
   </div>
 </footer>
 
