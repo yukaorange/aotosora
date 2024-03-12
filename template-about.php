@@ -102,7 +102,7 @@ get_header(); ?>
       <h2 class="header-level2__heading header-level2__heading--map _en js-reveal" data-splitting>MAP</h2>
     </div>
     <div class="about-map__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.5569239348447!2d131.634475211393!3d33.22571026080991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35469f03721adf21%3A0x77fbf66fab3b7ad8!2z44CSODcwLTA5NTQg5aSn5YiG55yM5aSn5YiG5biC5LiL6YOh5Lit5aSu77yT5LiB55uu77yY4oiS77yR77yQ!5e0!3m2!1sja!2sjp!4v1702984985964!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.0669282220965!2d131.496377!3d33.290912000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a71e07bfb405%3A0x6c7fcd89164f56ef!2z44CSODc0LTA5MTkg5aSn5YiG55yM5Yil5bqc5biC55-z5Z6j5p2x77yS5LiB55uu77yV4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1710222311304!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
   <!--howto -->
