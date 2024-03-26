@@ -19,14 +19,15 @@
         </div>
         <div class="footer-contact__body">
           <p class="footer-contact__text _serif">院内・企業内保育園運営についてお気軽にご相談ください</p>
-          <a href="tel:0977-80-7575" class="footer-contact__tel _serif"><span class="_serif">TEL</span>　0977-80-7575</a>
+          <a href="tel:0977-80-7575" class="footer-contact__tel _serif"><span class="_serif">TEL</span>　0977-80-7575　（TOMORROW CONMPANY）</a>
+          <a href="tel:0977-80-7878" class="footer-contact__tel _serif"><span class="_serif">TEL</span>　0977-80-7878　（青とそら）</a>
         </div>
       </div>
     </div>
     <?php
     get_template_part("template-part/component/fnav");
     ?>
-    <a href="#" class="privacy-policy">プライバシーポリシー</a>
+    <a href="<?php echo esc_url(home_url("privacy-policy")); ?>" class="privacy-policy">プライバシーポリシー</a>
     <div class="copyright _en">©2024 tomorrow company</div>
   </div>
 </footer>

@@ -89,7 +89,7 @@ get_header(); ?>
   </section>
   <!-- reservation -->
   <section class="section aotosora-reservation">
-    <a href="#" target="_blank" class="panel-reservation panel-reservation--reservation">
+    <a href="https://azkl.jp/" target="_blank" class="panel-reservation panel-reservation--reservation">
       <div class="panel-reservation__inner">
         <div class="panel-reservation__thumb">
           <img width="640" height="440" src="<?php echo  esc_url(get_template_directory_uri()); ?>/dist/images/aotosora/aotosora-reservation-qrcode.webp" alt="あずかるこちゃんへのアクセスQRコード">

@@ -27,18 +27,18 @@
         </div>
       <?php }; ?>
       <div class="header__buttons">
-        <a href="tel:0977-80-7575" class="button-tel">
+        <a href="tel:0977-80-7878" class="button-tel">
           <span class="button-tel__icon">
             <img width="25" height="25" src="<?php echo get_template_directory_uri(); ?>/dist/images/icon/icon-tel-brown.png" alt="電話発信ボタンです">
           </span>
           <span class="button-tel__text _en">tel</span>
         </a>
-        <a href="<?php echo esc_url(home_url("contact")); ?>" class="button-contact">
+        <!-- <a href="<?php echo esc_url(home_url("contact")); ?>" class="button-contact">
           <span class="button-contact__icon">
             <img width="25" height="25" src="<?php echo get_template_directory_uri(); ?>/dist/images/icon/icon-mail-brown.png" alt="お問い合わせページへ">
           </span>
           <span class="button-contact__text _en">contact</span>
-        </a>
+        </a> -->
         <?php
         get_template_part("template-part/component/drawer-button");
         ?>
